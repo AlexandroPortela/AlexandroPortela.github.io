@@ -6,6 +6,12 @@ body {
 
 }
 
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
+}
 
 h1 {
     font: bold 100% Arial, Helvetica, sans-serif;
@@ -129,7 +135,7 @@ table{
     }
 
     #lateral {        
-        display: none;
+        display: auto;
     }
 
 }
