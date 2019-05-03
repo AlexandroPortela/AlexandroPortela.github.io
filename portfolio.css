@@ -64,7 +64,7 @@ table{
 }
 
 #lateral {
-    width: 400px;
+    width: 300px;
     float: right;
    animation: 10s linear 0s normal none infinite change2;
 }
@@ -140,7 +140,21 @@ table{
 
 }
 
+@media screen and(max-width: 320px) {
 
+ #cabecalho {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #lateral {        
+        display: auto;
+    }
+
+}
 
 p {
   display: inline;
