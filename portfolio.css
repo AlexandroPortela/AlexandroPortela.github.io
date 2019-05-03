@@ -1,0 +1,184 @@
+body {
+    font: 150% Arial, Helvetica, sans-serif;
+    background-image: url("imagens/Fundo3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;  
+
+}
+
+
+h1 {
+    font: bold 100% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h2{
+    font: bold 90% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h3{
+    font: bold 80% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h4{
+    font: bold 70% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h5{
+    font: bold 60% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+table{
+    font: bold 80% Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#pagina {
+    padding: 5px;
+    width: 960px;    
+    margin: 20px auto;
+}
+
+#cabecalho {
+    height: 190px;    
+    background-image: url("imagens/Nome.png");
+    background-size: 100%;
+    
+}
+
+#conteudo {
+    width: 400px;
+    float: left;
+    animation: 10s linear 0s normal none infinite change;
+    
+}
+
+#lateral {
+    width: 400px;
+    float: right;
+   animation: 10s linear 0s normal none infinite change2;
+}
+
+#rodape {
+    clear: both;
+    text-align: center;
+    animation: 5s linear 0s normal none infinite change;
+}
+
+#cabecalho,
+#conteudo,
+#lateral {
+    margin-bottom: 5px;    
+}
+
+
+#pagina,
+#cabecalho,
+#conteudo,
+#lateral,
+#rodape {
+    border: solid 1px #cd0000;
+    
+}
+
+
+@media screen and (max-width: 980px) {
+
+    #pagina {
+        width: 94%;
+    }
+
+    #conteudo {
+        width: 65%;
+    }
+
+    #lateral {
+        width: 30%;
+    }
+s
+}
+
+
+@media screen and (max-width: 700px) {
+
+    #conteudo {
+        width: auto;
+        float: none;
+    }
+
+    #lateral {
+        width: auto;
+        float: none;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #cabecalho {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #lateral {        
+        display: none;
+    }
+
+}
+
+
+
+p {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  
+}
+
+ul li {
+  line-height: 40px;
+  margin: 0;
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12%, 100% {
+    transform: translatey();
+  }
+  17%,29% {
+    transform: translatey(2%);
+  }
+  
+}
+
+@keyframes change2 {
+  0%, 12%, 100% {
+    transform: translatex();
+  }
+  17%,29% {
+    transform: translatex(-5%);
+  }
+  
+}
